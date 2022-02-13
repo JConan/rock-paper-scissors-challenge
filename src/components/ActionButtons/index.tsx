@@ -1,4 +1,6 @@
-const ActionNames = ["rock", "paper", "scissors"];
+import "./action_button.scss";
+
+const ActionNames = ["ROCK", "PAPER", "SCISSORS"];
 export type ActionName = keyof typeof ActionNames;
 
 interface Props {
@@ -11,7 +13,8 @@ export const ActionButtons = ({ onAction }: Props) => {
       {ActionNames.map((name, idx) => (
         <button
           key={idx}
-          aria-label={`action_${name}`}
+          className={`btn_action ${name}`}
+          aria-label={`action button ${name}`}
           onClick={() => onAction && onAction(name as ActionName)}
         ></button>
       ))}

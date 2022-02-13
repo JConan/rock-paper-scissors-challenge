@@ -1,0 +1,27 @@
+.btn_action {
+  padding: 0;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #dbdbdb;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: none;
+  border-radius: 50%;
+
+  &.ROCK {
+    background-image: url("../../assets/images/icon-rock.svg");
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #db2e4c,
+      0px 0.5em 0px 15px #9f1634;
+  }
+  &.PAPER {
+    background-image: url("../../assets/images/icon-paper.svg");
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #4b69ef,
+      0px 0.5em 0px 15px #2945c2;
+  }
+  &.SCISSORS {
+    background-image: url("../../assets/images/icon-scissors.svg");
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #e9aa1f,
+      0px 0.5em 0px 15px #c76b1e;
+  }
+}

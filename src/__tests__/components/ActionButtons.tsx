@@ -11,8 +11,8 @@ describe("test apps", () => {
 
     buttons.forEach((button) => userEvent.click(button));
 
-    expect(clickAction).toHaveBeenNthCalledWith(1, "rock");
-    expect(clickAction).toHaveBeenNthCalledWith(2, "paper");
-    expect(clickAction).toHaveBeenNthCalledWith(3, "scissors");
+    expect(clickAction).toHaveBeenNthCalledWith(1, "ROCK");
+    expect(clickAction).toHaveBeenNthCalledWith(2, "PAPER");
+    expect(clickAction).toHaveBeenNthCalledWith(3, "SCISSORS");
   });
 });
