@@ -1,15 +1,55 @@
 @import "reset-css/sass/_reset.scss";
 
-// body {
-//   margin: 0;
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-//     sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
+  /** 
+   * setting body to use the viewport dimension
+   */
+  width: 100vw;
+  height: 100vh;
+
+  /**
+   * Global background setting
+   */
+  background: radial-gradient(ellipse at top, #1f3656, #131637);
+
+  /**
+   * include border in dimension calculation
+   */
+  * {
+    box-sizing: border-box;
+  }
+
+  /**
+   * application container sizing behavior
+   */
+  #root {
+    height: calc(100% - 0.75em * 2 - 0.85em);
+    overflow: auto;
+  }
+
+  /**
+   * Attribution footer styling
+   */
+  .attribution {
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 0.75em;
+    width: 100%;
+
+    a {
+      color: greenyellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
