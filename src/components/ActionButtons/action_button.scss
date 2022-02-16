@@ -1,27 +1,53 @@
+.action_buttons {
+  width: 400px;
+  height: 400px;
+  background-image: url("../../assets/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  & > *:last-child {
+    margin: auto;
+    margin-top: -35px;
+  }
+}
+
 .btn_action {
   padding: 0;
-  margin: 20px;
-  width: 100px;
-  height: 100px;
+  margin: 25px;
+  width: 150px;
+  height: 150px;
   background-color: #dbdbdb;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 50%;
   border-style: none;
   border-radius: 50%;
+  transform: scale(0.75);
 
   &.ROCK {
     background-image: url("../../assets/images/icon-rock.svg");
-    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #db2e4c,
-      0px 0.5em 0px 15px #9f1634;
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 25px #db2e4c,
+      0px 0.5em 0px 25px #9f1634;
   }
   &.PAPER {
     background-image: url("../../assets/images/icon-paper.svg");
-    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #4b69ef,
-      0px 0.5em 0px 15px #2945c2;
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 25px #4b69ef,
+      0px 0.5em 0px 25px #2945c2;
   }
   &.SCISSORS {
     background-image: url("../../assets/images/icon-scissors.svg");
-    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 15px #e9aa1f,
-      0px 0.5em 0px 15px #c76b1e;
+    box-shadow: inset 0px 4px #babfd2, 0px 0px 0px 25px #e9aa1f,
+      0px 0.5em 0px 25px #c76b1e;
   }
 }

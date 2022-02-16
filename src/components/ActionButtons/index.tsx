@@ -1,6 +1,12 @@
+/**
+ * Component that contain all possible action
+ * To be used as an input to retrieve user choice of action
+ *
+ */
+
 import "./action_button.scss";
 
-const ActionNames = ["ROCK", "PAPER", "SCISSORS"];
+const ActionNames = ["PAPER", "SCISSORS", "ROCK"];
 export type ActionName = keyof typeof ActionNames;
 
 interface Props {
@@ -9,7 +15,7 @@ interface Props {
 
 export const ActionButtons = ({ onAction }: Props) => {
   return (
-    <>
+    <div className="action_buttons">
       {ActionNames.map((name, idx) => (
         <button
           key={idx}
@@ -18,6 +24,6 @@ export const ActionButtons = ({ onAction }: Props) => {
           onClick={() => onAction && onAction(name as ActionName)}
         ></button>
       ))}
-    </>
+    </div>
   );
 };
